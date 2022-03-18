@@ -21,6 +21,14 @@
 	box-sizing: border-box;
 }
 
+img {
+	width: 100%;
+	height: auto;
+	height: 100%;
+	object-fit: cover;
+	border-radius: inherit;
+}
+
 html,
 body {
 	height: 100%;
@@ -32,7 +40,7 @@ body {
 	place-content: center;
 }
 
-.component {
+.qrcode-component {
 	width: 320px;
 	height: 496px;
 	background-color: var(--white);
@@ -41,21 +49,20 @@ body {
 	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.075);
 }
 
-.component img {
+.qrcode-component__image {
 	width: 100%;
-	object-fit: cover;
-	height: 100%;
+
 	border-radius: 10px;
 	margin-bottom: 30px;
 }
 
-.component h2 {
+.qrcode-component__title {
 	color: var(--dark-blue);
 	margin-bottom: 15px;
 	padding-inline: 15px;
 }
 
-.component p {
+.qrcode-component__paragraph {
 	color: var(--grayish-blue);
 	padding-inline: 15px;
 }
