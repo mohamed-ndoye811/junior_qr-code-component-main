@@ -1,0 +1,61 @@
+.attribution {
+	position: fixed;
+	bottom: 1.5rem;
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
+
+:root {
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+
+	font-size: 15px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-color: var(--light-gray);
+	font-family: "Outfit", sans-serif;
+	text-align: center;
+	display: grid;
+	place-content: center;
+}
+
+.component {
+	width: 320px;
+	height: 496px;
+	background-color: var(--white);
+	padding: 16px;
+	border-radius: 20px;
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.075);
+}
+
+.component img {
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.component h2 {
+	color: var(--dark-blue);
+	margin-bottom: 15px;
+	padding-inline: 15px;
+}
+
+.component p {
+	color: var(--grayish-blue);
+	padding-inline: 15px;
+}
